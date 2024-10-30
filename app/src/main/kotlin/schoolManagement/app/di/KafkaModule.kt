@@ -27,6 +27,7 @@ class KafkaModule {
     @Provides
     @Singleton
     fun provideActivityLogProducer(
+
         @Named("kafka.bootstrap.servers") bootstrapServers: String,
         @Named("kafka.username") username: String,
         @Named("kafka.password") password: String,
